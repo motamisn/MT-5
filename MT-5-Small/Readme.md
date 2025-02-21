@@ -54,15 +54,6 @@ The model is evaluated using the following metrics:
 | **chrF**   | `41.66`   |
 | **chrF++** | `40.05`   |
 
----
-
-## 📉 **Training & Evaluation Plots**
-
-### **Training & Validation Loss**
-![Training loss](/MT-5/MT-5-Small/img/train_loss.png)
-
----
-
 ## 📥 **Model Saving & Deployment**
 
 After fine-tuning, the trained model and tokenizer are saved in:
