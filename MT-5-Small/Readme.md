@@ -13,7 +13,7 @@ This repository contains code and resources for fine-tuning the **mT5-small** mo
 
 ---
 
-## 📂 **Dataset**
+## 🐂 **Dataset**
 
 - **Size**: 133,500 parallel Hindi-Bhili sentence pairs
 - **Source**: Custom dataset
@@ -43,8 +43,6 @@ This repository contains code and resources for fine-tuning the **mT5-small** mo
 | Optimizer          | adamw_torch |
 
 ### **3️⃣ Training Loss Graph**
-
-![Training Loss](MT-5-Small/img/train_loss.png)
 
 ![Training Loss](MT-5-Small/img/train_loss.png)
 
@@ -84,4 +82,3 @@ def translate(text):
 
 print(translate("आपका स्वागत है"))
 ```
-
