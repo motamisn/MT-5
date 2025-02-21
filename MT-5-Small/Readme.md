@@ -42,7 +42,7 @@ This repository contains code and resources for fine-tuning the **mT5-small** mo
 | Gradient Checkpointing | True  |
 | Optimizer          | adamw_torch |
 
-### **3️⃣ Training Loss Graph**
+### **3️⃣ Loss and Scores Graph**
 
 ![Alt text](img/train_loss.png)   ![Alt text](img/validation_loss.png)
 
