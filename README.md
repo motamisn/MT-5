@@ -79,7 +79,7 @@ def translate(text, tokenizer, model):
 
 # Load mT5-Small model
 tokenizer, model = load_model("./mt5-small-hi-bhili-finetuned")
-print(translate("आपका स्वागत है", tokenizer, model))  # Expected Output: "तुमारो सुगतो चे"
+print(translate("आपका स्वागत है", tokenizer, model))  
 
 # Load mT5-Base model
 tokenizer, model = load_model("./mt5-base-hi-bhili-finetuned")
