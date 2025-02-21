@@ -56,6 +56,15 @@ The model is evaluated using the following metrics:
 
 ---
 
+### **3️⃣ Loss and Scores Graph**
+
+![Alt text](img/train_loss.png)   ![Alt text](img/validation_loss.png)
+
+** Bleu and Chrf Scores Graph**
+
+![Alt text](img/Bleu.png)   ![Alt text](img/chrf.png)
+---
+
 ## 📥 **Model Saving & Deployment**
 
 After fine-tuning, the trained model and tokenizer are saved in:
