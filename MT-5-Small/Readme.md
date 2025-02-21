@@ -4,7 +4,7 @@ This repository contains code and resources for fine-tuning the **mT5-small** mo
 
 ---
 
-## 📖 **Model Details**
+## 📚 **Model Details**
 
 - **Base Model**: [google/mt5-small](https://huggingface.co/google/mt5-small)
 - **Type**: Sequence-to-sequence (Seq2Seq) transformer
@@ -25,7 +25,7 @@ This repository contains code and resources for fine-tuning the **mT5-small** mo
 
 ### **1️⃣ Preprocessing**
 
-- **Tokenizer**: `AutoTokenizer.from_pretrained("google/mt5-small")`
+- **Tokenizer**: AutoTokenizer.from_pretrained("google/mt5-small")
 - **Max Sequence Length**: 128 tokens
 - **Truncation & Padding**: Applied
 
@@ -33,14 +33,20 @@ This repository contains code and resources for fine-tuning the **mT5-small** mo
 
 | **Hyperparameter**     | **Value**    |
 |----------------------|------------|
-| Learning Rate       | `1e-4`     |
-| Epochs             | `100`      |
-| Weight Decay       | `0.01`     |
-| Logging Steps      | `100`      |
-| Mixed Precision (FP16) | `True`  |
-| Warmup Steps       | `500`      |
-| Gradient Checkpointing | `True`  |
-| Optimizer          | `adamw_torch` |
+| Learning Rate       | 1e-4     |
+| Epochs             | 100      |
+| Weight Decay       | 0.01     |
+| Logging Steps      | 100      |
+| Mixed Precision (FP16) | True  |
+| Warmup Steps       | 500      |
+| Gradient Checkpointing | True  |
+| Optimizer          | adamw_torch |
+
+### **3️⃣ Training Loss Graph**
+
+![Training Loss](MT-5-Small/img/train_loss.png)
+
+![Training Loss](MT-5-Small/img/train_loss.png)
 
 ---
 
@@ -50,15 +56,15 @@ The model is evaluated using the following metrics:
 
 | **Metric**  | **Score**  |
 |------------|-----------|
-| **BLEU**   | `10.45`   |
-| **chrF**   | `41.66`   |
-| **chrF++** | `40.05`   |
+| **BLEU**   | 10.45   |
+| **chrF**   | 41.66   |
+| **chrF++** | 40.05   |
 
-## 📥 **Model Saving & Deployment**
+## 👥 **Model Saving & Deployment**
 
 After fine-tuning, the trained model and tokenizer are saved in:
 
-📂 `./mt5-small-hi-bhili-finetuned/`
+📂 ./mt5-small-hi-bhili-finetuned/
 
 ---
 
@@ -76,4 +82,6 @@ def translate(text):
     output = model.generate(**inputs, max_length=128)
     return tokenizer.decode(output[0], skip_special_tokens=True)
 
-print(translate("आपका स्वागत है"))   
+print(translate("आपका स्वागत है"))
+```
+
