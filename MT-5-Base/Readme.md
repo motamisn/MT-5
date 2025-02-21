@@ -90,11 +90,4 @@ print(translate("आपका स्वागत है"))  # Expected Output: "
 
 ---
 
-## 📜 **License**
-
-[Specify License: MIT, Apache, etc.]
-
----
-
-### **🔗 Feel free to contribute, raise issues, or suggest improvements! 🚀**
 
