@@ -46,6 +46,9 @@ This repository contains code and resources for fine-tuning the **mT5-small** mo
 
 ![Alt text](img/train_loss.png)   ![Alt text](img/validation_loss.png)
 
+** Bleu and Chrf Scores Graph**
+
+![Alt text](img/Bleu.png)   ![Alt text](img/chrf.png)
 ---
 
 ## 📊 **Evaluation Metrics**
