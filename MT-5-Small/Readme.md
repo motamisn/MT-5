@@ -44,7 +44,7 @@ This repository contains code and resources for fine-tuning the **mT5-small** mo
 
 ### **3️⃣ Training Loss Graph**
 
-![Training Loss](MT-5-Small/img/train_loss.png)
+![Alt text](img/train_loss.png)
 
 ---
 
