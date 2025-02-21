@@ -59,7 +59,7 @@ The model is evaluated using the following metrics:
 ## 📉 **Training & Evaluation Plots**
 
 ### **Training & Validation Loss**
-![Training loss](img/train__loss.png)
+![Training loss](/MT-5/MT-5-Small/img/train_loss.png)
 
 ---
 
