@@ -56,6 +56,16 @@ The model is evaluated using the following metrics:
 
 ---
 
+## 📉 **Training & Evaluation Plots**
+
+### **Training & Validation Loss**
+![Training & Validation Loss](img/train_validation_loss.png)
+
+### **BLEU & chrF Scores**
+![BLEU & chrF Scores](img/bleu_chrf.png)
+
+---
+
 ## 📥 **Model Saving & Deployment**
 
 After fine-tuning, the trained model and tokenizer are saved in:
@@ -79,14 +89,3 @@ def translate(text):
     return tokenizer.decode(output[0], skip_special_tokens=True)
 
 print(translate("आपका स्वागत है"))   
-```
-
----
-
-## 🙌 **Acknowledgments**
-
-- **Google** for the `mT5-small` model
-- **Hugging Face** for the `Transformers` and `Datasets` library
-
----
-
