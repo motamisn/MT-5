@@ -59,10 +59,7 @@ The model is evaluated using the following metrics:
 ## 📉 **Training & Evaluation Plots**
 
 ### **Training & Validation Loss**
-![Training & Validation Loss](img/train_validation_loss.png)
-
-### **BLEU & chrF Scores**
-![BLEU & chrF Scores](img/bleu_chrf.png)
+![Training loss](img/train__loss.png)
 
 ---
 
