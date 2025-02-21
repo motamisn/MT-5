@@ -68,8 +68,7 @@ After fine-tuning, the trained model and tokenizer are saved in:
 
 ```python
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
-
-# Load the fine-tuned model
+ 
 tokenizer = AutoTokenizer.from_pretrained("./mt5-base-hi-bhili-finetuned")
 model = AutoModelForSeq2SeqLM.from_pretrained("./mt5-base-hi-bhili-finetuned")
 
@@ -78,7 +77,7 @@ def translate(text):
     output = model.generate(**inputs, max_length=128)
     return tokenizer.decode(output[0], skip_special_tokens=True)
 
-print(translate("आपका स्वागत है"))  # Expected Output: "तुमारो सुगतो चे"
+print(translate("आपका स्वागत है")) 
 ```
 
 ---
